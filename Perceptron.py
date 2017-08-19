@@ -1,3 +1,6 @@
+# Perceptron model for IRIS.csv - Linear dataset: Gives accuracy of 100%
+# Change 'IRIS-Setosa' to 'Yes'; Line 25; to use it on SPECTF_New.csv - Non Linear dataset: Gives varied accuracy
+
 from csv import reader
 from random import randrange, seed
 
