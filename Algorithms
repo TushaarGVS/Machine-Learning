@@ -1,9 +1,10 @@
 I. Linear Algorithms
 
     i. Simple Linear Regression: For predicting numerical values when there is only a single input.
-    ii. Multivariate Linear Regression: For predicting numerical values with more than one input (trained using StochasticGradient Descent).
+    ii. Multivariate Linear Regression: For predicting numerical values with more than one input (trained using Stochastic Gradient Descent).
     iii. Logistic Regression: For predicting a class value on 2 class problems (trained using Stochastic Gradient Descent).
-    iv. Perceptron: The simplest type of neural network for classification problems (trained using StochasticGradient Descent).
+    iv. Perceptron: The simplest type of neural network for classification problems (trained using Stochastic Gradient Descent).
+    v. Multilayer Perceptron: Using back-propogation algorithm for better predictions.
 
 II. Nonlinear Algorithms
 
