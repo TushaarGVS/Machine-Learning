@@ -113,12 +113,14 @@ def check_equal(fitness_values):
 def genetic_algorithm(population_size, chromosome_length, encoding, cross_over_rate, mutation_rate, num_iterations, dataset, k_folds):
     chromosomes = initialize_population(population_size, chromosome_length, encoding)
     fitness_values = []
-    while num_iterations > 0 or not check_equal(fitness_values):
+    while num_iterations > 0:
         fitness_values = fitness_evaluation(chromosomes, dataset, k_folds)
         chromosomes = roulette_wheel_selection(chromosomes, fitness_values)
         chromosomes = cross_over(chromosomes, population_size, chromosome_length, cross_over_rate)
         chromosomes = mutation(chromosomes, population_size, chromosome_length, mutation_rate, encoding)
         num_iterations -= 1
+        if check_equal(fitness_values):
+            break
     return chromosomes
 
 '''
