@@ -150,10 +150,12 @@ def naive_bayes(dataset, k_folds):
 
 '''
 filename = raw_input("Enter the file name: ")
-split = float(raw_input("Enter the split ratio: "))
+# split = float(raw_input("Enter the split ratio: "))
+k_folds = int(raw_input("Enter the number of folds: "))
 
 dataset = load_csv(filename)
-training_set, test_set = split_dataset(dataset, split)
-accuracy_value = naive_bayes(training_set, test_set)
-print("Accuracy: %s" %accuracy_value)
+# training_set, test_set = split_dataset(dataset, split)
+# accuracy_value = one_fold_naive_bayes(training_set, test_set)
+accuracy_value = naive_bayes(dataset, k_folds)
+print("Accuracy: %s" % accuracy_value)
 '''
